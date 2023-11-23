@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --default-bg-color: white;
+  --default-txt-color: black;
+  --default-menu-color: blue;
+}
+
+body {
+  background-color: var(--default-bg-color);
+  color: var(--default-txt-color);
+}
+.site-head {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid;
+}
+
+.site-nav-menu {
+  background-color: var(--default-menu-color);
+  position: absolute;
+  border: 1px solid;
+  top: 2.5rem;
+  width: 10rem;
+  height: 10rem;
+  visibility: hidden;
+}
+
+.site-menu-links {
+  text-decoration: none;
+  color: var(--default-txt-color);
+}
+
+.site-nav-hamburger {
+  font-size: 1.5rem;
+  transform: rotate(90deg);
+  cursor: pointer;
+  position: absolute;
+}
