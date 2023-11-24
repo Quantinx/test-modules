@@ -5,9 +5,21 @@
 }
 
 :root {
+  /* default variable declaration */
   --default-bg-color: white;
   --default-txt-color: black;
   --default-menu-color: blue;
+
+  /* light mode variables*/
+
+  --light-bg-color: white;
+  --light-txt-color: black;
+  --light-menu-color: blue;
+
+  /*Dark mode variables  */
+  --dark-bg-color: black;
+  --dark-txt-color: white;
+  --dark-menu-color: gray;
 }
 
 body {
