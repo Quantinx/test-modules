@@ -4,6 +4,7 @@ let hamburgerMenuEl = document.querySelector("#hamburgerMenu");
 let darkToggleEl = document.querySelector("#darkToggle");
 let rootEl = document.querySelector(":root");
 let hamburgerToggle = false;
+let imgOneEl = document.querySelector("#imgOne");
 let darkToggle = JSON.parse(localStorage.getItem("darkmode")) || false;
 console.log(hamburgerMenuEl);
 console.log(hamburgerToggleEl);
@@ -11,11 +12,14 @@ darkMode();
 hamburgerToggleEl.addEventListener("click", function (e) {
   if (hamburgerToggle === false) {
     hamburgerMenuEl.style.visibility = "visible";
+    hamburgerMenuEl.style.width = "15rem";
     hamburgerToggle = true;
-    hamburgerToggleEl.innerText = "|||";
+    hamburgerToggleEl.innerText = "X";
   } else {
     hamburgerMenuEl.style.visibility = "hidden";
-    hamburgerToggleEl.innerText = " X ";
+    hamburgerMenuEl.style.width = "0rem";
+
+    hamburgerToggleEl.innerText = "|||";
 
     hamburgerToggle = false;
   }
@@ -44,4 +48,8 @@ darkToggleEl.addEventListener("click", function (e) {
     localStorage.setItem("darkmode", JSON.stringify(darkToggle));
   }
   darkMode();
+});
+
+imgOneEl.addEventListener("click", function (e) {
+  imgOneEl.classList.toggle("imgzoomed");
 });
