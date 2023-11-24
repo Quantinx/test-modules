@@ -5,6 +5,7 @@
 }
 
 :root {
+  /* Dark mode/light mode settings - allows for easier changing of settings on a global level */
   /* default variable declaration */
   --default-bg-color: white;
   --default-txt-color: black;
